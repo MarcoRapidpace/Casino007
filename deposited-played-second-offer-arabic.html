@@ -36,6 +36,13 @@
         p, h1, h2, h3 {
             margin: 0;
         }
+
+        /* Restores the CRM's default sans-serif font fallback (not present in raw export) —
+           without this, any text block that doesn't set its own font-family falls back to
+           the browser's generic serif font instead of matching the rest of the design. */
+        body, table, td, p, h1, h2, h3, a, span, strong {
+            font-family: 'Inter', Arial, sans-serif;
+        }
     </style>
     <!--[if (mso 16)]> <style type="text/css"> a { text-decoration: none; } </style> <![endif]-->
     <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
