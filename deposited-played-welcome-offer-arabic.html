@@ -36,6 +36,14 @@
         p, h1, h2, h3 {
             margin: 0;
         }
+
+        /* Default font fallback. The CRM's compiled stylesheet applies Inter globally when
+           sending/previewing inside the platform; any text block without an explicit inline
+           font-family falls back to the browser's generic serif font in a standalone preview
+           without this rule. Purely additive - no markup or content was changed. */
+        body, table, td, p, h1, h2, h3, a, span, strong {
+            font-family: 'Inter', Arial, sans-serif;
+        }
     </style>
     <!--[if (mso 16)]> <style type="text/css"> a { text-decoration: none; } </style> <![endif]-->
     <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
