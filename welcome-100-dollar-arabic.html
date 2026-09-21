@@ -74,6 +74,16 @@
         @media (max-width: 600px) {
             .es-m-p20b { padding-bottom: 20px; }
         }
+
+        /* Reset default browser paragraph/heading margins. The CRM's compiled stylesheet
+           always zeroes these (standard practice for HTML email, since default UA margins
+           vary across clients) - spacing is controlled entirely by each block's own inline
+           line-height/padding, so without this reset extra ~1em gaps stack up above and
+           below every <p>, which is why the standalone preview looked far more spaced out
+           than inside the CRM. Purely additive - no markup or content was changed. */
+        p, h1, h2, h3 {
+            margin: 0;
+        }
     </style>
     <!--[if (mso 16)]> <style type="text/css"> a { text-decoration: none; } </style> <![endif]-->
     <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
