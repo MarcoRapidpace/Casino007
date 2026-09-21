@@ -71,8 +71,18 @@
         .es-p5b { padding-bottom: 5px; }
         .es-p5t { padding-top: 5px; }
         .es-m-p20b { padding-bottom: 0; }
+        /* Mobile responsive rules. The CRM's compiled stylesheet applies the standard
+           Stripo mobile breakpoint (fluid tables/images, stacked two-column blocks) when
+           sending/previewing inside the platform; the raw export doesn't include it, so
+           without this the standalone page stays a fixed 600px wide and forces horizontal
+           scrolling on phones. Purely additive - no markup or content was changed. */
         @media (max-width: 600px) {
             .es-m-p20b { padding-bottom: 20px; }
+            .es-content-body, .es-header-body, .es-footer-body { width: 100% !important; }
+            .esd-container-frame { width: 100% !important; }
+            .es-left, .es-right { float: none !important; width: 100% !important; }
+            .adapt-img { width: 100% !important; height: auto !important; }
+            a.es-button, button.es-button, .es-button-border { display: block !important; }
         }
 
         /* Reset default browser paragraph/heading margins. The CRM's compiled stylesheet
