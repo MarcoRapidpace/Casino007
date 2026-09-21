@@ -30,6 +30,33 @@
             mso-table-rspace: 0pt;
             max-height: 1000000px;
         }
+
+        /* Restored layout classes (padding / two-column floats) for standalone preview.
+           The CRM applies these automatically via its own compiled stylesheet when sending
+           or previewing inside the platform; they're added explicitly here so the file also
+           renders correctly when opened on its own (e.g. GitHub Pages). Purely additive -
+           no markup or content was changed. */
+        .es-left { float: left; }
+        .es-right { float: right; }
+        .es-p10 { padding: 10px; }
+        .es-p10r { padding-right: 10px; }
+        .es-p15 { padding: 15px; }
+        .es-p15b { padding-bottom: 15px; }
+        .es-p15l { padding-left: 15px; }
+        .es-p15r { padding-right: 15px; }
+        .es-p15t { padding-top: 15px; }
+        .es-p20 { padding: 20px; }
+        .es-p20l { padding-left: 20px; }
+        .es-p20r { padding-right: 20px; }
+        .es-p30 { padding: 30px; }
+        .es-p30r { padding-right: 30px; }
+        .es-p40r { padding-right: 40px; }
+        .es-p5b { padding-bottom: 5px; }
+        .es-p5t { padding-top: 5px; }
+        .es-m-p20b { padding-bottom: 0; }
+        @media (max-width: 600px) {
+            .es-m-p20b { padding-bottom: 20px; }
+        }
     </style>
     <!--[if (mso 16)]> <style type="text/css"> a { text-decoration: none; } </style> <![endif]-->
     <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
