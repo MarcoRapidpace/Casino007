@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a,
+        p,
+        span,
+        div,
+        h1,
+        h2,
+        h3 {
+            -webkit-text-size-adjust: 100% !important;
+            -ms-text-size-adjust: 100% !important;
+            text-size-adjust: 100% !important;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            max-height: 1000000px;
+        }
+
+        /* Restored layout classes (padding / two-column floats) for standalone preview. The CRM applies these automatically via its own compiled stylesheet when sending or previewing inside the platform; they're added explicitly here so the file also renders correctly when opened on its own (e.g. GitHub Pages). Purely additive - no markup or content was changed. */
+        .es-left {
+            float: left;
+        }
+
+        .es-right {
+            float: right;
+        }
+
+        .es-p10 {
+            padding: 10px;
+        }
+
+        .es-p10r {
+            padding-right: 10px;
+        }
+
+        .es-p15t {
+            padding-top: 15px;
+        }
+
+        .es-p15b {
+            padding-bottom: 15px;
+        }
+
+        .es-p20 {
+            padding: 20px;
+        }
+
+        .es-p20l {
+            padding-left: 20px;
+        }
+
+        .es-p20r {
+            padding-right: 20px;
+        }
+
+        .es-p30r {
+            padding-right: 30px;
+        }
+
+        .es-p40r {
+            padding-right: 40px;
+        }
+
+        .es-p5t {
+            padding-top: 5px;
+        }
+
+        .es-p5b {
+            padding-bottom: 5px;
+        }
+
+        .es-m-p20b {
+            padding-bottom: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .es-content-body {
+                width: 100% !important;
+            }
+
+            .adapt-img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .es-button {
+                display: block !important;
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+            }
+        }
+
+        /* Mobile responsive rules. The CRM's compiled stylesheet applies the standard Stripo mobile breakpoint (fluid tables/images, stacked two-column blocks) when sending/previewing inside the platform; the raw export doesn't include it, so without this the standalone page stays a fixed 600px wide and forces horizontal scrolling on phones. Purely additive - no markup or content was changed. */
+        @media (max-width: 600px) {
+            .es-m-p20b {
+                padding-bottom: 20px;
+            }
+
+            .es-content-body,
+            .es-header-body,
+            .es-footer-body {
+                width: 100% !important;
+            }
+
+            .esd-container-frame {
+                width: 100% !important;
+            }
+
+            .es-left,
+            .es-right {
+                float: none !important;
+                width: 100% !important;
+            }
+
+            .adapt-img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            a.es-button,
+            button.es-button,
+            .es-button-border {
+                display: block !important;
+            }
+        }
+
+        /* Reset default browser paragraph/heading margins. The CRM's compiled stylesheet always zeroes these (standard practice for HTML email, since default UA margins vary across clients) - spacing is controlled entirely by each block's own inline line-height/padding, so without this reset extra ~1em gaps stack up above and below every <p>, which is why the standalone preview looked far more spaced out than inside the CRM. Purely additive - no markup or content was changed. */
+        p,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        /* Default font fallback. The CRM's compiled stylesheet applies Inter globally when sending/previewing inside the platform; any text block without an explicit inline font-family falls back to the browser's generic serif font in a standalone preview without this rule. Purely additive - no markup or content was changed. */
+        body,
+        table,
+        td,
+        p,
+        h1,
+        h2,
+        h3,
+        a,
+        span,
+        strong {
+            font-family: 'Inter', Arial, sans-serif;
+        }
+    </style>
+    <!--[if (mso 16)]> <style type="text/css"> a { text-decoration: none; } </style> <![endif]-->
+    <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
+    <!--[if gte mso 9]> <noscript> <xml> <o:OfficeDocumentSettings> <o:AllowPNG></o:AllowPNG> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
+    <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
+    <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
+    <!--[if gte mso 9 ]><style> sup { font-size: 100% !important; } </style><! [endif]-->
+    <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->
+    <!--[if mso]><xml> <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"> <w:DontUseAdvancedTypographyReadingMail/> </w:WordDocument> </xml><![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!--<![endif]-->
+</head>
+
+<body>
+    <div class="es-wrapper-color" style="background-color: #0f232b;">
+        <!--[if gte mso 9]> <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t"> <v:fill type="tile" color="#f6f6f6"></v:fill> </v:background> <![endif]-->
+        <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" role="none" bgcolor="#0F232B" style="background-color: #0f232b;">
+            <tbody>
+                <tr>
+                    <td valign="top" style="padding: 0; margin: 0">
+                        <table cellpadding="0" cellspacing="0" class="es-content esd-footer-popover" align="center">
+                            <tbody>
+                                <tr>
+                                    <td class="esd-stripe" align="center" style="background-color: #0f232b;" bgcolor="#0F232B">
+                                        <table class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: transparent">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="esd-structure" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="600" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="esd-block-text es-p20">
+                                                                                        <p><br></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank" href="https://casino007.com/casino"><img class="adapt-img" src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_2a83a6a9-fd45-431b-93b2-fb7b35d72741/frame_427322306_ILB8ol8GkMI5OGvZ.png" alt style="display: block;" width="600"></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p15t es-p15b es-p40r es-p20l" align="left" bgcolor="#0C1C23" style="background-color: #0c1c23;">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="540" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text es-p10r">
+                                                                                        <p style="line-height: 150%; font-size: 22px; color: #30debe; font-family: inter, sans-serif;"><strong>&nbsp;&nbsp;أصبحت متاحة الآن Drop & Wins فعالية! 🎉</strong></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text">
+                                                                                        <p style="font-size: 24px; color: #30debe;"><strong>اربح جوائز إضافية حتى 24 يونيو!&nbsp;</strong></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p5t es-p5b es-p20r es-p20l" align="left" bgcolor="#0C1C23" style="background-color: #0c1c23;">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text es-p30r" dir="rtl" style="direction: rtl;">
+                                                                                        <p style="font-size: 16px; color: #efefef;">&nbsp;Drops & Wins لا تفوّت فرصة المشاركة في فعالية&nbsp;</p>
+                                                                                        <p style="font-size: 16px; color: #efefef;">&nbsp;حيث يمكن أن تحمل لك كل جولة فرصة جديدة للفوز بجوائز إضافية حتى 24 يونيو&nbsp;</p>
+                                                                                        <p style="line-height: 150%; font-size: 15px; color: #efefef; font-family: inter, sans-serif;"><br></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p20" align="left" bgcolor="#0C1C23" style="background-color: #0c1c23;">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank" href="https://casino007.com/promotions"><img class="adapt-img" src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_a04d9b78-f125-4811-bbd0-47bda467e5ae/screenshot_20260604_at_161223_Nj8B3kan11bSxL6O.png" alt style="display: block;" width="513"></a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text es-p20" style="direction: rtl"><strong><span style="font-size:20px;"></span></strong>
+                                                                                        <p style="color: #efefef; font-size: 20px;">🎰 العب الألعاب المؤهلة للحصول على جوائز نقدية إضافية</p>
+                                                                                        <p style="color: #efefef; font-size: 20px;">💰 اربح مكافآت إضافية إلى جانب أرباحك المعتادة من اللعب</p>
+                                                                                        <p style="color: #efefef; font-size: 20px;">⚡ استمتع بإثارة متواصلة ومفاجآت رائعة</p>
+                                                                                        <p style="color: #efefef; font-size: 20px;">📅 الفعالية متاحة إلى غاية 24 يونيو فقط</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text">
+                                                                                        <p style="color: #f1c232; font-size: 20px;">🔥 الجوائز قد تأتي في أي لحظة، فاستمر باللعب وابقَ في قلب الحدث 🚀</p>
+                                                                                        <p style="display: none; color: #f1c232;"><br></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text">
+                                                                                        <p style="color: #efefef; font-size: 16px;"><br></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text">
+                                                                                        <p style="color: #efefef; font-size: 16px;">نتمنى لك تجربة راقية ومليئة بالإثارة!</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="esd-block-text">
+                                                                                        <p><br></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-button">
+                                                                                        <!--[if mso]><a href="https://www.casino007.com" target="_blank" hidden> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://www.casino007.com" style="height:46px; v-text-anchor:middle; width:384px" arcsize="22%" strokecolor="#e1c33f" strokeweight="2px" fillcolor="#e1c33f"> <w:anchorlock></w:anchorlock> <center style='color:#333333; font-family:Inter, sans-serif; font-size:18px; font-weight:400; line-height:18px; mso-text-raise:1px'>انضم إلى الإثارة الآن!</center> </v:roundrect></a><![endif]-->
+                                                                                        <!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-radius: 10px; border-color: #e1c33f; background: #e1c33f;"><a href="https://www.casino007.com" class="es-button" target="_blank" style="font-family: Inter, sans-serif; font-size: 22px; background: #e1c33f; border-radius: 10px; padding: 10px 99px 10px 95px; mso-border-alt: 10px solid #e1c33f">انضم إلى الإثارة الآن!</a></span>
+                                                                                        <!--<![endif]-->
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p15t es-p15b es-p20r es-p20l" align="left" style="background-color: #173b4c; border-radius: 0px 0px 10px 10px;" bgcolor="#173B4C">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-text es-p10">
+                                                                                        <p style="color: #c5ced2;">© Casino007 2026. كل الحقوق محفوظة&nbsp;</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="right" class="esd-block-text es-p10" esd-links-color="#f1c232">
+                                                                                        <p style="color: #cccccc;">موقع كازينو 007&nbsp;&nbsp;مملوك ويتم تشغيله من قبل الشركة ذات الرقم ٣-١٠٢-٩٤٢٠٥٢ إس آر إل، المسجلة في كوستاريكا، وعنوانها المسجل هو: مقاطعة بونتاريناس ٠٦، كانتون ١١، غارابيتو، جاكو، ٦١١٠١، كوستاريكا</p>
+                                                                                        <p style="color: #cccccc;">وهو مرخّص ومنظَّم من قبل هيئة ألعاب أنجوان بموجب رخصة رقم: إيه إل إس آي-٢٠٢٥١٠٠٠٨-إف آي ١ الصادرة في ١٦ أكتوبر ٢٠٢٥، ويمثله شركة ثريلي جروب المحدودة، التي تقدم خدمات المعالجة كوكيل فوترة ولديها مكتب مسجل يقع في: أليكو كونستانتينو ٥٦، ستروفولوس، ٢٠٢٤، نيقوسيا، قبرص</p>
+                                                                                        <p style="color: #cccccc;"><br></p>
+                                                                                        <p style="color: #cccccc;">يُحظر الوصول إلى مواقع ألعاب المال الحقيقي عبر الإنترنت بموجب بعض القوانين الوطنية. وتقع على عاتق كل لاعب مسؤولية التأكد من التزامه بالقوانين المعمول بها عند الوصول إلى هذا الموقع</p>
+                                                                                        <p style="color: #cccccc;"></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-text es-p10" esd-links-color="#f1c232">
+                                                                                        <p style="color: #d3d3d3; font-size: 13px;"><a target="_blank" style="color: #f1c232; font-size: 13px;" href="mailto:support@casino007.com">Contact Us</a>&nbsp; &nbsp;<a target="_blank" style="color: #f1c232; font-size: 13px;" href="https://casino007.com/documents/aml-kyc-policy">AML & KYC Policy</a>&nbsp; &nbsp;<a target="_blank" style="color: #f1c232; font-size: 13px;" href="https://casino007.com/documents/privacy-policy">Privacy Policy</a>&nbsp;<span style="color:#C5CED2;">&nbsp;&nbsp;<a target="_blank" style="color: #f1c232; font-size: 13px;" href="https://casino007.com/documents/terms-and-conditions">Terms</a>&nbsp; &nbsp;<a target="_blank" style="color: #f1c232; font-size: 13px;" href="https://casino007.com/documents/responsible-gambling">Responsible Gambling</a></span>&nbsp; <a target="_blank" style="color: #f1c232; font-size: 13px;" href="https://casino007.com/faq">FAQs</a></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="esd-block-html" align="center" style="text-align: center;">
+                                                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td align="center" style="padding: 0;"><a href="https://verification.anjouangamingboard.org/validate?domain=casino007.com&seal_id=2ec1eda89b4a5dcc4f6a7afe0bc054a1235eb40aa56f264e4ad3035b5e0b089d1c4ccdd755e868cbc505cc05fa2f2713&stamp=10130fdf8246c78660e1d77c71fc8e6f#" target="_blank" style="text-decoration: none; display: inline-block;"><img src="https://casino007.s3.dualstack.eu-south-1.amazonaws.com/basiclarge%20%281%29.png" alt="Gaming License" height="60" style="display: block; border: 0; outline: none; margin: 6px 10px 0 10px; height: 60px; width: auto;"></a><a href="https://casino007.com/documents/responsible-gambling" target="_blank" style="text-decoration: none; display: inline-block;"><img src="https://casino007.s3.dualstack.eu-south-1.amazonaws.com/18%2B%20in%20Circle.png" alt="18+ Responsible Gambling" height="60" style="display: block; border: 0; outline: none; margin: 0 10px; height: 60px; width: auto;"></a></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="esd-structure es-p20" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="left" class="esd-block-text">
+                                                                                        <p><br></p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="reserved-section-urm" style="max-width:600px;margin:auto;">
+            <div id="footer-id-reserved"><span class="replace-footer-class"><b style="display:none;"></b></span></div>
+        </div>
+        <div class="reserved-section-urm" style="max-width: 600px; margin: auto">
+            <div id="subscription-id-reserved" style="text-align: center"><span class="replace-subscription-class"><b style="display: none; visibility: hidden"></b></span></div>
+        </div>
+    </div>
+</body>
+
+</html>
